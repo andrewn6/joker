@@ -1,9 +1,9 @@
-name: Build
+name: build
 
 on: [push]
 
 jobs:
-  build:
+  jokes:
 
     runs-on: ubuntu-latest
     steps:
