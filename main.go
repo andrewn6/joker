@@ -18,6 +18,11 @@ func main() {
         return c.Send(file)
     })
 
+    app.Get("/ping", func (c *fiber.Ctx) error {
+      c.Set("Content-Type", "text")
+      return c.SendString("pong")
+    })
+
     log.Fatal(app.Listen(":8080"))
 }
 
