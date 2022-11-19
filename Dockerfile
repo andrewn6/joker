@@ -10,6 +10,6 @@ RUN go mod download
 
 RUN go build -o /api
 
-EXPOSE 8080
+EXPOSE 8000
 
 CMD [ "/api" ]
